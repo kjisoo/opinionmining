@@ -25,19 +25,19 @@ example_text = '''
 '''
 
 #
-#   By default:
-#       maximum number of tags is set as 100
-#       library type is set as 1
+#   기본:
+#       태그의 최대 수는 100 임. 가장 빈도수가 높은 100개만 return.
+#       한글 라이브러리 종류는 네 가지이고, 기본으론 Hannanum을 사용함.
 #           1 : Hannanum
 #           2 : Kkma
 #           3 : Komoran
 #           4 : Twitter
-#       returns in format [{'noun':n, 'count':c}] in descending order of size.
+#       리턴 값의 포맷: [{'noun':n, 'count':c}] 빈도수가 높은 것 부터.
 #
 #   TODO:
-#       - filter out words from custom defined library, such as '것', '수', etc.
-#       - detect language and use corresponding noun-extracting technology.
-#           - currently only supports Korean.
+#       - '것', '수'와 같이 불필요한 단어들 필터링.
+#       - 언어를 감지하여 필요할 땐 영어 라이브러리를 사용.
+#           - 현재 한국어만 지원.
 #
 def getNouns(text = example_text, numOfTags=100, libType=1):
     if libType == 1:
