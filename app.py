@@ -2,7 +2,7 @@
 
 import noun_extract as n
 
-text = '''
+test_text = '''
 아이폰 7은 터지지 않을 것입니다.  
 오늘 날씨는 매우 좋지 않습니다. 
 I have a meeting with the Wall Street Journal later today.
@@ -12,5 +12,5 @@ I have a meeting with the Wall Street Journal later today.
 노래나 들으면서 해야겠다.
 '''
 
-nouns = n.getNouns(text)
+nouns = n.getNouns(test_text)
 print(nouns)
