@@ -12,5 +12,5 @@ I have a meeting with the Wall Street Journal later today.
 노래나 들으면서 해야겠다.
 '''
 
-nouns = n.getNouns(test_text)
+nouns = n.getNouns(libType = 4)
 print(nouns)
